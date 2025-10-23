@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+     <title>College Events</title>
+     <style>
+     body{
+        font-family:Arial,sans-serif;
+        background-color:white;
+        margin:20px;
+     }
+     h1{
+        text-align:center;
+        color:green;
+        font-size:32px;
+        margin-bottom:20px;
+    }
+    table{
+        width:60%;
+        margin:0 auto;
+        background-color:yellow;
+        border-collapse:collapse;
+        box-shadow:0 0 10px rgba(0,0,0,0.1);
+    }
+    td{
+        padding:15px;
+        font-size:18px;
+        color:#555;
+    }
+    th{
+        text-align:left;
+        padding:15px;
+        background-color:#4CAF50;
+        color:white;
+        font-size:20px;
+   }
+   input[type="text"],input[type="email"],input[type="password"],select,textarea{
+        width:100%;
+        padding:7px;
+        font-size:16px;
+        border:1px solid #ccc;
+        border-radius:4px;
+   }
+   input[type="submit"],input[type="reset"]{
+       background-color:#4CAF50;
+       color:white;
+       padding:10px 20px;
+       border:none;
+       border-radius:4px;
+       cursor:pointer;
+       font-size:18px;
+   }
+   input[type="submit"]:hover,input[type="reset"]:hover{
+       background-color:#45a049;
+   }
+   textarea{
+       resize:vertical;
+       height:100px;
+   }
+   .radio,.checkbox{
+       width:auto;
+   }
+   </style>
+</head>
+<body>
+     <h1>Registration Form</h1>
+     <form action="#"method="post">
+     <table>
+     <tr>
+     <th colspan="2">SMVITM College Events</th>
+     </tr>
+     <tr>
+     <td>Name</td>
+     <td><input type="text"name="name"placeholder="Enter your name">
+     </td>
+     </tr>
+     <tr>
+     <td>USN:</td>
+     <td><input type="text"name="USN"placeholder="Enter your USN"></td>
+     </tr>
+     <tr>
+     <td>Email:</td>
+     <td><input type="email"name="email"placeholder="Enter your email"></td>
+     </tr> 
+     <tr>
+     <td>Gender:</td>
+     <td>
+        <input type="radio"name="gender"value="male"class="radio">Male
+        <input type="radio"name="gender"value="female"class="radio">Female
+     </td>
+     </tr>
+     <tr>
+     <td>Department:</td>
+     <td>
+         <select name="department">
+         <option value="cs">CSE</option>
+         <option value="ec">ECE</option>
+         <option value="ds">AIDS</option>
+         <option value="ml">AIML</option>
+         <option value="mech">Mechanical</option>
+         <option value="civil">CIVIL</option>
+     </td>
+     </tr>
+     <tr>
+     <td>Number of Participants:</td>
+     <td><input type="participants"name="participants"placeholder="Enter the no. of participants"></td>
+     </tr> 
+     <tr>
+     <td>Events:</td>
+     <td>
+     <input type="checkbox" name="events" value="Tech Quiz" class="checkbox">  
+                      Tech Quiz
+     <input type="checkbox" name="events" value="Web wavers" class="checkbox"> 
+                       Web wavers
+     <input type="checkbox" name="events" value="poster making" class="checkbox">  
+                          Poster making
+     <input type="checkbox" name="events" value="tech likith" class="checkbox">
+                          Tech likith
+     </td>
+     </tr>
+     <tr>
+     <td>Phone number:</td>
+     <td><input type="phone"name="phone"placeholder="Enter your phone number"></td>
+     </tr>
+     <tr>
+     <td colspan="2" style="text-align:center;">
+         <input type="submit"value="Register">
+         <input type="reset"value="Reset">
+     </td>
+     </tr>
+     </table>
+     </form>
+</head>
+</html>
+   
+
